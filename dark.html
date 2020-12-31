@@ -1,0 +1,41 @@
+<html>
+	<head>
+        <link rel="stylesheet" type="text/css" href="style_dark.css">
+		<title> Die Kuchen Sekte </title>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a id=navLinks href="home.html">Startseite</a></li>
+				<li><a id=navLinks href="derBeweis.html"> Der Beweis </a></li>
+				<li><a id=navLinks href="kuchenunser.html">Kuchen unser</a></li>
+				<li><a id=navLinks href="https://twitch.tv/fenitvonumbra"> Stream </a></li>
+		  	</ul> 
+		</nav>
+
+        
+
+        <script> 
+            if (navigator.cookieEnabled) {
+                if(document.cookie != "darkmode=true"){
+                    var now = new Date();
+                    var time = now.getTime();
+                    var expireTime  = time + 10000*36000;
+                    now.setTime(expireTime);
+                    document.cookie = "darkmode=true; expires=" + now.toGMTString() + "; path=/";
+                    alert("Darkmode aktiviert");
+                }else{
+                    alert("Darkmode ist schon aktiv!");
+                }
+            }else{
+                alert("Du erlaubst keine Cookies");
+            }        
+        
+        
+        
+            //alert("Sobald die Website geladen wird wird 1 Cookie gespeichert um überall auf der Website der Dark mode aktiv zu haben. Wird gelöscht am " + now.toGMTString())</script>
+        </script>
+         
+         
+</body>
+</html>

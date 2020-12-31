@@ -1,6 +1,15 @@
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<script>
+			if (navigator.cookieEnabled) {
+				if(document.cookie == "darkmode=true"){
+					document.write('<link rel="stylesheet" type="text/css" href="style_dark.css">');
+				}
+				else{
+					document.write('<link rel="stylesheet" type="text/css" href="style_light.css">');
+				}
+    		}
+		</script>
 		<title> Die Kuchen Sekte </title>
 	</head>
 	<body>
@@ -9,8 +18,10 @@
 				<li><a id=navLinks href="home.html">Startseite</a></li>
 				<li><a id=navLinks href="derBeweis.html"> Der Beweis </a></li>
 				<li><a id=navLinks href="kuchenunser.html">Kuchen unser</a></li>
+				<li><a id=navLinks href="https://twitch.tv/fenitvonumbra"> Stream </a></li>
 		  	</ul> 
 		</nav>
+		<br>
 
 		<video src="./Media/Es_gibt_Sie.mp4" type="video/mp4" autoplay="true" controls alt="Dein Browser ist des Kuchen nicht wuerdig !">
 			
